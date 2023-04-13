@@ -185,7 +185,7 @@ const Home = () => {
                 <div data-aos="fade-up" className="skill-flex-container experience-flex-container">
 
                     <div className="technical-skills-containter">
-                        <Collapsible trigger={<h4 className="technical-skills-title title"><ComputerIcon className="technical-skill-icon" /> Web (Frontend) <ArrowDropDownCircleIcon /></h4>}>
+                        <Collapsible trigger={<h4 className="technical-skills-title title"><ComputerIcon className="technical-skill-icon" /> Web (Frontend) <ArrowDropDownCircleIcon className="dropdown-icon"/></h4>}>
 
 
                             <div className="technical-skills">
@@ -225,7 +225,7 @@ const Home = () => {
                     </div>
 
                     <div className="technical-skills-containter">
-                        <Collapsible trigger={<h4 className="technical-skills-title title"><SettingsApplicationsIcon className="technical-skill-icon" /> Web (Backend) <ArrowDropDownCircleIcon /></h4>}>
+                        <Collapsible trigger={<h4 className="technical-skills-title title"><SettingsApplicationsIcon className="technical-skill-icon" /> Web (Backend) <ArrowDropDownCircleIcon className="dropdown-icon"/></h4>}>
 
                             <div className="technical-skills">
 
@@ -280,7 +280,7 @@ const Home = () => {
 
 
                     <div className="technical-skills-containter">
-                        <Collapsible trigger={<h4 className="technical-skills-title title"><ArticleIcon className="technical-skill-icon" /> Research / MS Office <ArrowDropDownCircleIcon /></h4>}>
+                        <Collapsible trigger={<h4 className="technical-skills-title title"><ArticleIcon className="technical-skill-icon" /> Research / MS Office <ArrowDropDownCircleIcon className="dropdown-icon"/></h4>}>
 
                             <div className="technical-skills">
 
@@ -315,7 +315,7 @@ const Home = () => {
 
 
                     <div className="technical-skills-containter">
-                        <Collapsible trigger={<h4 className="technical-skills-title title"><BrushIcon className="technical-skill-icon" /> Graphics (UI/UX) <ArrowDropDownCircleIcon /></h4>}>
+                        <Collapsible trigger={<h4 className="technical-skills-title title"><BrushIcon className="technical-skill-icon" /> Graphics (UI/UX) <ArrowDropDownCircleIcon className="dropdown-icon"/></h4>}>
 
                             <div className="technical-skills">
                                 <div className="skill">
@@ -336,7 +336,7 @@ const Home = () => {
 
 
                     <div className="technical-skills-containter">
-                        <Collapsible trigger={<h4 className="technical-skills-title title"><LanguageIcon className="technical-skill-icon" /> Language <ArrowDropDownCircleIcon /></h4>}>
+                        <Collapsible trigger={<h4 className="technical-skills-title title"><LanguageIcon className="technical-skill-icon" /> Language <ArrowDropDownCircleIcon className="dropdown-icon"/></h4>}>
 
                             <div className="technical-skills">
                                 <div className="skill">
@@ -361,7 +361,7 @@ const Home = () => {
 
 
                     <div className="technical-skills-containter">
-                        <Collapsible trigger={<h4 className="technical-skills-title title"><MovieCreationIcon className="technical-skill-icon" /> Video Editing <ArrowDropDownCircleIcon /></h4>}>
+                        <Collapsible trigger={<h4 className="technical-skills-title title"><MovieCreationIcon className="technical-skill-icon" /> Video Editing <ArrowDropDownCircleIcon className="dropdown-icon"/></h4>}>
 
                             <div className="technical-skills">
 
@@ -385,7 +385,7 @@ const Home = () => {
 
 
                     <div className="technical-skills-containter">
-                        <Collapsible trigger={<h4 className="technical-skills-title title"><LibraryMusicIcon className="technical-skill-icon" /> Music <ArrowDropDownCircleIcon /></h4>}>
+                        <Collapsible trigger={<h4 className="technical-skills-title title"><LibraryMusicIcon className="technical-skill-icon" /> Music <ArrowDropDownCircleIcon className="dropdown-icon"/></h4>}>
 
                             <div className="technical-skills">
 
@@ -415,7 +415,7 @@ const Home = () => {
 
 
                     <div className="technical-skills-containter">
-                        <Collapsible trigger={<h4 className="technical-skills-title title">Others <ArrowDropDownCircleIcon /></h4>}>
+                        <Collapsible trigger={<h4 className="technical-skills-title title">Others <ArrowDropDownCircleIcon className="dropdown-icon"/></h4>}>
 
                             <div className="technical-skills">
 
