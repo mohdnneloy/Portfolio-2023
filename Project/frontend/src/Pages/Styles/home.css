@@ -1,0 +1,393 @@
+.main{
+    background-color: var(--dark);
+    color: white;
+    height: auto;
+    display: flex;
+    width: 100%;
+    padding-top: 15rem;
+}
+
+.box{
+    width: 43%;
+}
+
+.details{
+    padding: 7rem 0rem 10rem 0rem;
+    margin-left: 23rem;
+}
+
+.button{
+    margin-top: 2rem;
+    background-color: var(--normal);
+    border-color: var(--normal);
+    color: white;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    transition: 0.3s;
+}
+
+.button:hover{
+    background-color: white;
+    border-color: var(--normal);
+    color: var(--dark);
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    transition: 0.3s;
+    
+}
+
+.button2{
+    margin-left: 1rem;
+}
+
+.social-media-links{
+    padding: 2.5rem 0.5rem 1rem 0.25rem;
+}
+
+.social-media-link{
+    transform: scale(1.5);
+}
+
+.social-media-link-a:nth-child(1){
+    margin: 0rem 1rem 0rem 0rem;
+}
+
+.social-media-link-a{
+    margin: 0rem 1rem;
+    color: white;
+    transition: 0.3s;
+}
+
+.social-media-link-a:hover{
+    color: var(--semi-light);
+    filter: drop-shadow(0rem 0.1rem 0.25rem var(--dark));
+    transition: 0.3s;
+}
+
+.image{
+    margin: -10rem 0rem 0rem -17rem;
+
+}
+
+.right-image{
+    width: 50rem;
+}
+
+/*About Me Section ======================================*/
+
+.about-me{
+    background-color: var(--dark);
+    color: white;
+    display: flex;
+    max-width: 100%;
+    padding: 10rem 0rem;
+    margin-top: -8rem;
+}
+
+.image2{
+    text-align: center;
+}
+
+.left-image{
+    border-radius: 1rem;
+    width: 30rem;
+    margin-left: 22rem;
+    margin-top: 2rem;
+}
+
+.details2{
+    padding: 8rem 9rem 0rem 0rem;
+    text-align: justify;
+    margin-left: 6rem;
+}
+
+.section-sub-heading{
+    color: var(--yellow)
+}
+
+.section-paragraph{
+    padding: 2rem 0rem 2rem 0rem;
+}
+
+/*Experience Section ==========================================*/
+
+.experience-heading{
+    text-align: center;
+    padding: 1rem 2rem 4rem 0rem;
+}
+.experience{
+    background-color: var(--dark);
+    color: white;
+    padding: 10rem 10rem;
+}
+
+.experience-flex-container{
+    background-color: var(--dark);
+    color: white;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+
+.experience-container{
+    padding: 2rem;
+    border-radius: 0.25rem;
+    text-align: center;
+    margin: 0.75rem;
+    background-color: var(--normal);
+    width: 23%;
+    height: 30rem;
+    font-size: 0.95em;
+    transition: 0.3s;
+}
+
+.experience-container:hover{
+    padding: 2rem;
+    border-radius: 0.25rem;
+    text-align: center;
+    margin: 0.75rem;
+    margin-top: 0.25rem;
+    background-color: var(--normal);
+    width: 23%;
+    height: 30rem;
+    font-size: 0.95em;
+    filter: drop-shadow(0rem 0.1rem 0.25rem var(--semi-light));
+    transition: 0.3s;
+}
+
+.icon{
+    transform: scale(2);
+    margin: 2rem;
+    color: var(white);
+    filter: drop-shadow(0rem 0.1rem 0.25rem var(--dark));
+}
+
+.title{
+    padding: 0.25rem 0rem;
+    color: var(--yellow);
+    font-weight: var(--font-bold);
+}
+
+.information{
+    padding: 1rem 0rem;
+    color:white;
+    text-align: center;
+}
+
+.experience-button{
+    background-color: var(--dark);
+    border-color: var(--dark);
+    color: white;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    transition: 0.3s;
+}
+
+.experience-button:hover{
+    background-color: white;
+    border-color: white;
+    color: var(--normal);
+    filter: drop-shadow(0.25rem 0.25rem 0.25rem black);
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    transition: 0.3s;
+    
+}
+
+/*Skills =================================================*/
+
+.skills{
+    margin-top: -8rem;
+    padding-bottom: 12rem;
+}
+
+.skills-heading{
+
+    padding: 1rem;
+}
+
+
+.skill-flex-container{
+    padding: 0rem 0rem;
+    margin-left: 1%;
+}
+
+.technical-skills-containter{
+    text-align: left;
+    width: 32%;
+    padding: 1rem 0.5rem;
+    border-radius: 0.25rem;
+    margin: 1rem 0.5rem;
+    background-color: var(--normal);
+    height: auto;
+    font-size: 0.95em;
+    transition: 0.2s;
+    
+}
+
+.technical-skills-containter:hover{
+    text-align: left;
+    width: 32%;
+    padding: 1rem 0.5rem;
+    border-radius: 0.25rem;
+    margin: 1rem 0.5rem;
+    background-color: var(--normal);
+    height: auto;
+    font-size: 0.95em;
+    filter: drop-shadow(0rem 0rem 0.5rem var(--light));
+    transition: 0.2s;
+    
+}
+
+
+.technical-skills-title{
+    text-align: center;
+    padding: 1.5rem 0rem;
+    color: white;
+}
+
+.skill-title{
+    font-size: 1em;
+    color: var(--yellow);
+}
+
+.skill-icon{
+    transform: scale(1);
+    margin: 0rem 1rem;
+    color: white;
+    filter: drop-shadow(0rem 0.1rem 0.25rem var(--dark));
+}
+
+.skill{
+    margin: 0.5rem 0rem 0.5rem 1.75rem;
+    width: 40%;
+}
+
+.skill-level{
+    padding-left: 3.5rem;
+}
+
+.technical-skills{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0rem 0.5rem;
+}
+
+.technical-skill-icon{
+    transform: scale(1.3);
+    margin: 0px 5px;
+    color: white;
+}
+
+/*Education Section ==================================*/
+
+.education{
+    margin-top: -10rem;
+    padding-left: 10rem;
+}
+
+.roadmap{
+    display: flex;
+    margin-top: 3rem;
+    padding-left: 2rem;
+}
+
+.checkpoints{
+    padding: 0% 0% 0% 30%;
+}
+
+.ebox{
+    max-width: 50%;
+}
+
+.round{
+    width: 1rem;
+    height: 1rem;
+    background-color: var(--yellow);
+    border-radius: 100%;
+}
+
+.line{
+    width: 0.1rem;
+    height: 10rem;
+    background-color: white;
+    transform: translate(0.46rem, 0rem);
+}
+
+.education-content{
+    margin: -2.6rem 0rem 0rem 2rem;
+}
+
+.qualification{
+    padding: 2.40rem 0rem
+}
+
+.qualification-title{
+    color: var(--light)
+}
+
+.qualification-school{
+    font-weight: var(--light);
+}
+
+.qualification-school{
+    font-weight: var(--light);
+}
+
+.qualification-date-icon{
+    transform: scale(0.8);
+    margin-top: -0.2rem;
+    margin-left: -0.25rem;
+}
+
+/*Contact Section ==================================*/
+
+.contact{
+    padding: 10rem 0rem;
+    margin-top: -10rem;
+}
+
+.contact-form{
+    border-radius: 0.5rem;
+    background-color: var(--normal);
+    padding: 2rem;
+}
+
+.contact-form input, textarea{
+    border: 0.15rem solid var(--dark);
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    width: 47%;
+    background-color: var(--dark);
+    color: white;
+    margin: 0.75rem 1rem;
+    margin: 0.75rem 1rem;
+}
+
+.contact-form textarea{
+    width: 96.5%;
+    resize: none;
+    
+}
+
+.contact-form input::placeholder, textarea::placeholder{
+    color: white;
+}
+
+.contact-button{
+    background-color: var(--dark);
+    margin-left: 42.5%;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-button:hover{
+    margin-left: 42.5%;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}

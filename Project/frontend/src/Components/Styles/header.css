@@ -1,0 +1,45 @@
+.sticky {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 40;
+}
+
+.header{
+    display: flex;
+    padding: 2rem 2rem 0rem;
+    background-color: var(--dark);  
+    overflow: hidden;
+}
+
+.header-box{
+    width: 50%;
+}
+
+.header-logo{
+    color: white;
+}
+
+.header-logo:hover{
+    color: var(--light);
+    transition: .3s;
+}
+
+.nav-bar{
+    text-align: right;
+}
+
+.nav-list-item{
+    color: white;
+    transition: .3s;
+}
+
+.nav-list-item:hover{
+    color: var(--light);
+    transition: .3s;
+}
+
+
+
+
+

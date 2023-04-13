@@ -1,0 +1,505 @@
+import React from 'react'
+import { useEffect, useRef } from 'react'
+import Header from '../Components/Header'
+import Collapsible from 'react-collapsible';
+import emailjs from '@emailjs/browser';
+
+/*CSS Content*/
+import './Styles/home.css'
+
+/*Images*/
+import myimage from '../Images/Neloy6.png'
+import myimage2 from '../Images/Neloy5.jpg'
+
+/*Files*/
+import CV from '../Files/Neloy - CV 2023.pdf'
+
+
+/*Animations*/
+import { TypeAnimation } from 'react-type-animation';
+import Aos from "aos";
+import 'aos/dist/aos.css';
+
+/*Icons*/
+import MonitorIcon from '@mui/icons-material/Monitor';
+import MovieCreationIcon from '@mui/icons-material/MovieCreation';
+import BrushIcon from '@mui/icons-material/Brush';
+import ArticleIcon from '@mui/icons-material/Article';
+import VerifiedRoundedIcon from '@mui/icons-material/VerifiedRounded';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import ArrowDropDownCircleIcon from '@mui/icons-material/ArrowDropDownCircle';
+import ComputerIcon from '@mui/icons-material/Computer';
+import SettingsApplicationsIcon from '@mui/icons-material/SettingsApplications';
+import LibraryMusicIcon from '@mui/icons-material/LibraryMusic';
+import LanguageIcon from '@mui/icons-material/Language';
+
+/*Social Media Icons*/
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import EmailIcon from '@mui/icons-material/Email';
+import { SiBitbucket } from 'react-icons/si';
+import PinterestIcon from '@mui/icons-material/Pinterest';
+
+
+const Home = () => {
+
+    /* Contact Form UseStates*/
+    const form = useRef();
+
+    /* Contact Form Function */
+    const sendEmail = (e) => {
+        e.preventDefault();
+        console.log(form.current)
+    
+        emailjs.sendForm('service_4s89s8p', 'template_v6elcsd', form.current, '85CbgGPWCiWSVIi2C')
+          .then((result) => {
+              console.log(result.text);
+              alert("Thank You! Your message has been sent!");
+          }, (error) => {
+              console.log(error.text);
+              alert("Error! Please try again!");
+          });
+      };
+
+
+    /*Use effect*/
+    useEffect(() => {
+        Aos.init({ duration: 1000 });
+    }, []);
+
+    return (
+        <>
+            <Header />
+
+            <div className="main" id='main'>
+
+
+                <div data-aos="fade-right" className="box details">
+                    <h2>Welcome! I'm</h2>
+                    <h2>Mohammad Nabiluzzaman Neloy</h2>
+
+                    <TypeAnimation
+                        sequence={[
+                            'Software Developer',
+                            1000,
+                            'Gaming Video Creator',
+                            2000,
+                            () => {
+                                console.log('Sequence completed'); // Place optional callbacks anywhere in the array
+                            }
+                        ]}
+                        wrapper="span"
+                        cursor={true}
+                        repeat={Infinity}
+                        style={{ fontSize: '1.75em', display: 'inline-block', fontWeight: 500, color: '#ffff00' }}
+                    />
+                    <br />
+
+                    <div className="social-media-links">
+                        <a className='social-media-link-a' href="mailto: mohammadneloy11@gmail.com" target="_blank"><EmailIcon className='social-media-link' /></a>
+                        <a className='social-media-link-a' href="https://www.linkedin.com/in/mohd-n-neloy/" target="_blank"><LinkedInIcon className='social-media-link' /></a>
+                        <a className='social-media-link-a' href="https://github.com/mohdnneloy" target="_blank"><GitHubIcon className='social-media-link' /></a>
+                        <a className='social-media-link-a' href="https://bitbucket.org/mohdnneloy/workspace/repositories" target="_blank"><SiBitbucket size={21} className='social-media-link' /></a>
+                        <a className='social-media-link-a' href="https://www.pinterest.com/mohdnneloy11" target="_blank"><PinterestIcon className='social-media-link' /></a>
+                    </div>
+
+                    <a href={CV} download>
+                        <button className='btn button' type="submit">Download CV</button>
+                    </a>
+                    <a href="#contact">
+                    <button className='btn button button2'>Let's Talk</button>
+                    </a>
+
+                </div>
+
+
+                <div className="box image">
+                    <img data-aos="fade-up" className="right-image" src={myimage} alt="" />
+                </div>
+
+
+            </div>
+
+
+
+            <div className="about-me" id='about-me'>
+
+                <div data-aos="fade-up" className="box image2">
+                    <img className="left-image" src={myimage2} alt="" />
+                </div>
+
+                <div data-aos="fade-left" className="box details2">
+                    <h1 className="section-heading">About Me</h1>
+                    <h4 className='section-sub-heading'>Working On A New Project? Hire Me or Let's Collaborate!</h4>
+                    <p className='section-paragraph'>I'm an enthusiastic fresh graduate of computer science with an innovative mind and experience in software development,
+                        graphics designing as well as video editing
+                        obtained from personal projects.
+                    </p>
+                </div>
+
+            </div>
+
+            <div className="experience" id='experience'>
+
+                <h1 data-aos="fade-right" className='experience-heading'>Experience</h1>
+
+                <div data-aos="fade-up" className="experience-flex-container">
+
+                    <div className="experience-container">
+                        <MonitorIcon className="icon" />
+                        <h4 className="title">Web Developer</h4>
+                        <p className="information">I have an experience of 2+ years in developing dynamic web-applications and static websites. I can build both frontend and backend web-applications using React.js and Django. I can also build wordpress websites on demand.</p>
+                        <a href="#portfolio" className='btn experience-button'>Checkout Portfolio</a>
+                    </div>
+
+                    <div className="experience-container video-creator">
+                        <MovieCreationIcon className="icon" />
+                        <h4 className="title">Video-Creator</h4>
+                        <p className="information">I have an experience of 3+ years in creating youtube videos. I create gameplay and tutorial videos alongside with shorts on my youtube channel. </p>
+                        <a href="#portfolio" className='btn experience-button'>Checkout Portfolio</a>
+                    </div>
+
+                    <div className="experience-container graphics-designer">
+                        <BrushIcon className="icon" />
+                        <h4 className="title">Graphics Designer</h4>
+                        <p className="information">I have an experience of 3+ years in designing logos, thumbnails, banners, business cards and websites. Checkout my designs on my pinterest profile for more details.</p>
+                        <a href="#portfolio" className='btn experience-button'>Checkout Portfolio</a>
+                    </div>
+
+                    <div className="experience-container researcher">
+                        <ArticleIcon className="icon" />
+                        <h4 className="title">Researcher</h4>
+                        <p className="information">I have an experience of 6 months working as a reasearch intern. I have published a research paper in IET Blockchain on the last year of my Bachelor's Degree. Checkout my paper provided in the portfolio section.</p>
+                        <a href="#portfolio" className='btn experience-button'>Checkout Portfolio</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div className="skills experience" id='skills'>
+
+                <h1 data-aos="fade-right" className='skills-heading experience-heading'>Skills</h1>
+
+
+                <div data-aos="fade-up" className="skill-flex-container experience-flex-container">
+
+                    <div className="technical-skills-containter">
+                        <Collapsible trigger={<h4 className="technical-skills-title title"><ComputerIcon className="technical-skill-icon" /> Web (Frontend) <ArrowDropDownCircleIcon /></h4>}>
+
+
+                            <div className="technical-skills">
+
+                                <div className="skill">
+                                    <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />HTML</h5>
+                                    <p className="skill-level">Intermediate</p>
+                                </div>
+
+                                <div className="skill">
+                                    <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />CSS</h5>
+                                    <p className="skill-level">Intermediate</p>
+                                </div>
+
+                                <div className="skill">
+                                    <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Bootstrap</h5>
+                                    <p className="skill-level">Intermediate</p>
+                                </div>
+
+                                <div className="skill">
+                                    <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Javascript</h5>
+                                    <p className="skill-level">Intermediate</p>
+                                </div>
+
+                                <div className="skill">
+                                    <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />React.js</h5>
+                                    <p className="skill-level">Beginner</p>
+                                </div>
+
+                                <div className="skill">
+                                    <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Wordpress</h5>
+                                    <p className="skill-level">Intermediate</p>
+                                </div>
+
+                            </div>
+                        </Collapsible>
+                    </div>
+
+                    <div className="technical-skills-containter">
+                        <Collapsible trigger={<h4 className="technical-skills-title title"><SettingsApplicationsIcon className="technical-skill-icon" /> Web (Backend) <ArrowDropDownCircleIcon /></h4>}>
+
+                            <div className="technical-skills">
+
+                                <div className="skill">
+                                    <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />MySQL</h5>
+                                    <p className="skill-level">Intermediate</p>
+                                </div>
+
+                                <div className="skill">
+                                    <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />XAMPP</h5>
+                                    <p className="skill-level">Intermediate</p>
+                                </div>
+
+                                <div className="skill">
+                                    <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Python</h5>
+                                    <p className="skill-level">Intermediate</p>
+                                </div>
+
+                                <div className="skill">
+                                    <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Django</h5>
+                                    <p className="skill-level">Beginner</p>
+                                </div>
+
+                                <div className="skill">
+                                    <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />REST API</h5>
+                                    <p className="skill-level">Beginner</p>
+                                </div>
+
+                                <div className="skill">
+                                    <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Blockchain</h5>
+                                    <p className="skill-level">Beginner</p>
+                                </div>
+
+                                <div className="skill">
+                                    <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Solidity</h5>
+                                    <p className="skill-level">Beginner</p>
+                                </div>
+
+                                <div className="skill">
+                                    <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />PHP</h5>
+                                    <p className="skill-level">Intermediate</p>
+                                </div>
+
+                                <div className="skill">
+                                    <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Git</h5>
+                                    <p className="skill-level">Intermediate</p>
+                                </div>
+
+                            </div>
+                        </Collapsible>
+                    </div>
+
+
+                    <div className="technical-skills-containter">
+                        <Collapsible trigger={<h4 className="technical-skills-title title"><ArticleIcon className="technical-skill-icon" /> Research / MS Office <ArrowDropDownCircleIcon /></h4>}>
+
+                            <div className="technical-skills">
+
+                                <div className="skill">
+                                    <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Word</h5>
+                                    <p className="skill-level">Intermediate</p>
+                                </div>
+
+                                <div className="skill">
+                                    <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Powerpoint</h5>
+                                    <p className="skill-level">Intermediate</p>
+                                </div>
+
+                                <div className="skill">
+                                    <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Excel</h5>
+                                    <p className="skill-level">Intermediate</p>
+                                </div>
+
+                                <div className="skill">
+                                    <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Mendeley</h5>
+                                    <p className="skill-level">Intermediate</p>
+                                </div>
+
+                                <div className="skill">
+                                    <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Zotero</h5>
+                                    <p className="skill-level">Intermediate</p>
+                                </div>
+
+                            </div>
+                        </Collapsible>
+                    </div>
+
+
+                    <div className="technical-skills-containter">
+                        <Collapsible trigger={<h4 className="technical-skills-title title"><BrushIcon className="technical-skill-icon" /> Graphics (UI/UX) <ArrowDropDownCircleIcon /></h4>}>
+
+                            <div className="technical-skills">
+                                <div className="skill">
+                                    <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Photoshop </h5>
+                                    <p className="skill-level">Intermediate</p>
+                                </div>
+                                <div className="skill">
+                                    <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Illustrator </h5>
+                                    <p className="skill-level">Intermediate</p>
+                                </div>
+                                <div className="skill">
+                                    <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Adobe XD </h5>
+                                    <p className="skill-level">Intermediate</p>
+                                </div>
+                            </div>
+                        </Collapsible>
+                    </div>
+
+
+                    <div className="technical-skills-containter">
+                        <Collapsible trigger={<h4 className="technical-skills-title title"><LanguageIcon className="technical-skill-icon" /> Language <ArrowDropDownCircleIcon /></h4>}>
+
+                            <div className="technical-skills">
+                                <div className="skill">
+                                    <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />English</h5>
+                                    <p className="skill-level">Intermediate</p>
+                                </div>
+                                <div className="skill">
+                                    <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Bangla</h5>
+                                    <p className="skill-level">Intermediate</p>
+                                </div>
+                                <div className="skill">
+                                    <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Hindi</h5>
+                                    <p className="skill-level">Intermediate</p>
+                                </div>
+                                <div className="skill">
+                                    <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Spanish</h5>
+                                    <p className="skill-level">Intermediate</p>
+                                </div>
+                            </div>
+                        </Collapsible>
+                    </div>
+
+
+                    <div className="technical-skills-containter">
+                        <Collapsible trigger={<h4 className="technical-skills-title title"><MovieCreationIcon className="technical-skill-icon" /> Video Editing <ArrowDropDownCircleIcon /></h4>}>
+
+                            <div className="technical-skills">
+
+                                <div className="skill">
+                                    <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Premiere Pro </h5>
+                                    <p className="skill-level">Intermediate</p>
+                                </div>
+
+                                <div className="skill">
+                                    <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />After Effects </h5>
+                                    <p className="skill-level">Beginner</p>
+                                </div>
+
+                                <div className="skill">
+                                    <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Filmora</h5>
+                                    <p className="skill-level">Intermediate</p>
+                                </div>
+                            </div>
+                        </Collapsible>
+                    </div>
+
+
+                    <div className="technical-skills-containter">
+                        <Collapsible trigger={<h4 className="technical-skills-title title"><LibraryMusicIcon className="technical-skill-icon" /> Music <ArrowDropDownCircleIcon /></h4>}>
+
+                            <div className="technical-skills">
+
+                                <div className="skill">
+                                    <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Guitar</h5>
+                                    <p className="skill-level">Intermediate</p>
+                                </div>
+
+                                <div className="skill">
+                                    <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Vocals </h5>
+                                    <p className="skill-level">Intermediate</p>
+                                </div>
+
+                                <div className="skill">
+                                    <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Tabla</h5>
+                                    <p className="skill-level">Intermediate</p>
+                                </div>
+
+                                <div className="skill">
+                                    <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Harmonium</h5>
+                                    <p className="skill-level">Intermediate</p>
+                                </div>
+
+                            </div>
+                        </Collapsible>
+                    </div>
+
+
+                    <div className="technical-skills-containter">
+                        <Collapsible trigger={<h4 className="technical-skills-title title">Others <ArrowDropDownCircleIcon /></h4>}>
+
+                            <div className="technical-skills">
+
+                                <div className="skill">
+                                    <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Public Speaking</h5>
+                                    <p className="skill-level">Intermediate</p>
+                                </div>
+
+                                <div className="skill">
+                                    <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Team Work</h5>
+                                    <p className="skill-level">Intermediate</p>
+                                </div>
+
+                                <div className="skill">
+                                    <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Problem Solving</h5>
+                                    <p className="skill-level">Intermediate</p>
+                                </div>
+
+                            </div>
+                        </Collapsible>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div className="education experience" id='education'>
+
+                <h1 data-aos="fade-right" className='education-heading experience-heading'>Education</h1>
+
+                <div className="roadmap">
+
+                    <div data-aos="fade-right" className="checkpoints e-box">
+                        <div className="round"></div>
+                        <div className="line"></div>
+                        <div className="round"></div>
+                        <div className="line"></div>
+                        <div className="round"></div>
+                        <div className="line"></div>
+                        <div className="round"></div>
+                    </div>
+
+                    <div data-aos="fade-up" className="education-content e-box">
+                        <div className="qualification">
+                            <h5 className='qualification-title'>B.SC Computer Science Engineering (CGPA 3.85/4.00)</h5>
+                            <h6 className="qualification-school">North South University, Dhaka, Bangladesh</h6>
+                            <p className="qualification-date"><CalendarMonthIcon className="qualification-date-icon" /> 2018-2023</p>
+                        </div>
+                        <div data-aos="fade-up" className="qualification">
+                            <h5 className='qualification-title'>Senior Secondary Certificate (AISSCE 12th)</h5>
+                            <h6 className="qualification-school">Daisy Dales Senior Secondary School, New Delhi, India</h6>
+                            <p className="qualification-date"><CalendarMonthIcon className="qualification-date-icon" /> 2015-2017</p>
+                        </div>
+                        <div data-aos="fade-up" className="qualification">
+                            <h5 className='qualification-title'>Secondary Certificate (AISSCE 10th)</h5>
+                            <h6 className="qualification-school">Daisy Dales Senior Secondary School, New Delhi, India</h6>
+                            <p className="qualification-date"><CalendarMonthIcon className="qualification-date-icon" /> 2013-2015</p>
+                        </div>
+                        <div data-aos="fade-up" className="qualification">
+                            <h5 className='qualification-title'>Middle School</h5>
+                            <h6 className="qualification-school">Colegio San Antonio, Madrid, Spain</h6>
+                            <p className="qualification-date"><CalendarMonthIcon className="qualification-date-icon" /> 2005-2008</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div className="contact experience" id="contact">
+                <h1 data-aos="fade-right" className='experience-heading'>Contact Me!</h1>
+                <form data-aos="fade-up" className='container contact-form' ref={form} onSubmit={sendEmail}>
+                    <input type="text" placeholder="Full Name" name="user_name" required/>
+                    <input type= "email" placeholder="Email" name="user_email" required/>
+                    <input type= "contact" placeholder="Mobile Number" name="user_contact" required/>
+                    <input type="text" placeholder="Email Subject" name="user_subject" required/>
+                    <textarea rows="8" placeholder="Your Message" name="user_message" required></textarea>
+                    <button className='btn button contact-button' type="submit">Send Message</button>
+                </form>            
+            </div>
+
+        </>
+    )
+}
+
+export default Home
