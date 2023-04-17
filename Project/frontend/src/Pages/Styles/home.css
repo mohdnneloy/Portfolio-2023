@@ -70,7 +70,7 @@
 }
 
 .right-image{
-    width: 50rem;
+    width: 100%;
 }
 
 /*About Me Section ======================================*/
@@ -113,12 +113,13 @@
 
 .experience-heading{
     text-align: center;
-    padding: 1rem 2rem 4rem 0rem;
+    padding: 1rem 0rem 4rem 0rem;
 }
 .experience{
     background-color: var(--dark);
     color: white;
-    padding: 10rem 10rem;
+    padding: 10rem 0rem;
+    margin-top: -1rem;
 }
 
 .experience-flex-container{
@@ -127,9 +128,10 @@
     height: auto;
     display: flex;
     flex-wrap: wrap;
-    align-items: center; 
+    align-items: center;
+    justify-content: center;
     margin-top: 2rem;
-    margin-left: 1rem;
+    margin-left: 0rem;
 }
 
 .experience-container{
@@ -138,7 +140,7 @@
     text-align: center;
     margin: 0.75rem;
     background-color: var(--normal);
-    width: 23%;
+    width: 22.9rem;
     height: 30rem;
     font-size: 0.95em;
     transition: 0.3s;
@@ -151,7 +153,7 @@
     margin: 0.75rem;
     margin-top: 0.25rem;
     background-color: var(--normal);
-    width: 23%;
+    width: 22.9rem;
     height: 30rem;
     font-size: 0.95em;
     filter: drop-shadow(0rem 0.1rem 0.25rem var(--semi-light));
@@ -204,20 +206,13 @@
     padding-bottom: 12rem;
 }
 
-.skills-heading{
-
-    padding: 2rem 0rem;
-}
-
-
 .skill-flex-container{
     padding: 1rem 0rem;
-    margin-left: 1%;
 }
 
 .technical-skills-containter{
     text-align: left;
-    width: 32%;
+    width: 31rem;
     padding: 1rem 0.5rem;
     border-radius: 0.25rem;
     margin: 1rem 0.5rem;
@@ -230,7 +225,7 @@
 
 .technical-skills-containter:hover{
     text-align: left;
-    width: 32%;
+    width: 31rem;
     padding: 1rem 0.5rem;
     border-radius: 0.25rem;
     margin: 1rem 0.5rem;
@@ -291,21 +286,22 @@
 
 .education{
     margin-top: -10rem;
-    padding-left: 10rem;
 }
 
 .roadmap{
     display: flex;
-    margin-top: 3rem;
-    padding-left: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin-left: 37rem;
+    margin-top: -2rem;
 }
 
 .checkpoints{
-    padding: 0% 0% 0% 30%;
+    text-align: center;
 }
 
 .ebox{
-    max-width: 50%;
+    max-width: 100%;
 }
 
 .round{
@@ -323,11 +319,21 @@
 }
 
 .education-content{
-    margin: -2.6rem 0rem 0rem 2rem;
+    margin: 5rem 0rem 0rem -39rem;
 }
 
 .qualification{
-    padding: 2.40rem 0rem
+    padding: 2.40rem 0rem;
+}
+
+.qualification:nth-child(odd){
+    text-align: right;
+    margin-right: 42rem;
+}
+
+.qualification:nth-child(even){
+    text-align: left;
+    margin-left: 42rem;
 }
 
 .qualification-title{
@@ -347,6 +353,101 @@
     margin-top: -0.2rem;
     margin-left: -0.25rem;
 }
+
+/*Projects Section ==================================*/
+
+.projects{
+    margin-top: -10rem;
+}
+.project-selector{
+    text-align: center;
+}
+
+.project-button{
+    color: white;
+    border: none;
+    margin: 0rem 0.5rem;
+    padding: 0.5rem 1rem;
+    transition: .2s;
+}
+
+.project-button:hover{
+    color: var(--yellow);
+    border: none;
+    margin: 0rem 0.5rem;
+    padding: 0.5rem 1rem;
+    transition: .2s;
+    
+}
+
+.selected{
+    color: white;
+    background-color: var(--normal);
+    margin: 0rem 0.5rem;
+    padding: 0.5rem 1rem;
+    transition: .2s;  
+}
+
+.selected:hover{
+    color: white;
+    background-color: var(--normal);
+    margin: 0rem 0.5rem;
+    padding: 0.5rem 1rem;
+    transition: .2s;  
+}
+
+.project-container{
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project{
+    margin: 0rem 1rem;
+    border: none;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    width: 25rem;
+    text-align: center;
+    background-color: var(--normal);
+    
+}
+
+.project-image{
+    border-top-left-radius: 0.85rem;
+    border-top-right-radius: 0.85rem;
+}
+
+.project .card-title{
+    color: var(--yellow);
+    padding: 0.5rem 1rem;
+}
+
+.project .card-text{
+    text-align: justify;
+    color: white;
+    padding: 0.5rem 1rem;
+}
+
+.project .card-body{
+    border-radius: 1rem;
+}
+
+.project-social-media-links{
+    padding: 0.5rem 1rem;
+}
+
+.project-social-media-links .social-media-link{
+    color: white;
+}
+
+.project-social-media-links .social-media-link:hover{
+    color: var(--yellow);
+    filter: none;
+    
+}
+
 
 /*Contact Section ==================================*/
 
