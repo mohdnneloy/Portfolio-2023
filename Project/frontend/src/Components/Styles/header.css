@@ -55,7 +55,7 @@
     .header{
         display: flex;
         padding: 2rem 2rem 0rem;
-        background-color: var(--dark);  
+        background-color: var(--dark); 
     }
     
     .header-box{
@@ -84,6 +84,7 @@
     .nav-list-item:hover{
         color: var(--light);
         transition: .3s;
+        font-size: 1.2em; 
     }
 }
 
@@ -102,6 +103,7 @@
         padding: 2rem 2rem 0rem;
         background-color: var(--dark);  
         width: 100%;
+        font-size: 1.2em; 
     }
     
     .header-box{
