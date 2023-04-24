@@ -6,6 +6,8 @@ import emailjs from '@emailjs/browser';
 
 /*CSS Content*/
 import './Styles/home.css'
+import './Styles/home-tablet.css'
+import './Styles/home-mobile.css'
 
 /*Images*/
 import myimage from '../Images/Neloy6.png'
@@ -118,7 +120,7 @@ const Home = () => {
                         </div>
 
                         <a href={CV} download>
-                            <button className='btn button' type="submit">Download CV</button>
+                            <button className='btn button button1' type="submit">Download CV</button>
                         </a>
                         <a href="#contact">
                         <button className='btn button button2'>Let's Talk</button>
@@ -142,7 +144,7 @@ const Home = () => {
                         <img className="left-image" src={myimage2} alt="" />
                     </div>
 
-                    <div data-aos="fade-left" className="box details2">
+                    <div data-aos="fade-right" className="box details2">
                         <h1 className="section-heading">About Me</h1>
                         <h4 className='section-sub-heading'>Working On A New Project? Hire Me or Let's Collaborate!</h4>
                         <p className='section-paragraph'>I'm an enthusiastic fresh graduate of computer science with an innovative mind and experience in software development,
