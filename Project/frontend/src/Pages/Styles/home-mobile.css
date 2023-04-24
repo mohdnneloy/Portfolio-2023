@@ -532,14 +532,14 @@
     
     .contact-button{
         background-color: var(--dark);
-        margin-left: 42.5%;
         padding: 1rem 2rem;
         margin-top: 1rem;
         margin-bottom: 0.5rem;
+        margin-left: 0rem;
     }
     
     .contact-button:hover{
-        margin-left: 42.5%;
+        margin-left: 0rem;
         padding: 1rem 2rem;
         margin-top: 1rem;
         margin-bottom: 0.5rem;
