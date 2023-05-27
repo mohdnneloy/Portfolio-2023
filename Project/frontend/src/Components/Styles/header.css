@@ -11,13 +11,10 @@
     .header{
         display: flex;
         padding: 2rem 2rem 0rem;
-        background-color: var(--dark);  
+        background-color: var(--dark); 
+        justify-content: space-between; 
     }
     
-    .header-box{
-        margin-right: 0rem;
-        width: 100%;
-    }
     
     .header-logo{
         color: white;
@@ -26,10 +23,6 @@
     .header-logo:hover{
         color: var(--light);
         transition: .3s;
-    }
-    
-    .nav-bar{
-        margin-right: 0rem;
     }
     
     .nav-list-item{
@@ -43,54 +36,10 @@
     }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    .sticky {
-        position: sticky;
-        top: 0;
-        width: 100%;
-        z-index: 40;
-    }
-    
-    .header{
-        display: flex;
-        padding: 2rem 2rem 0rem;
-        background-color: var(--dark); 
-    }
-    
-    .header-box{
-        margin-right: 0rem;
-        width: 100%;
-    }
-    
-    .header-logo{
-        color: white;
-    }
-    
-    .header-logo:hover{
-        color: var(--light);
-        transition: .3s;
-    }
-    
-    .nav-bar{
-        margin-right: 0rem;
-    }
-    
-    .nav-list-item{
-        color: white;
-        transition: .3s;
-    }
-    
-    .nav-list-item:hover{
-        color: var(--light);
-        transition: .3s;
-        font-size: 1.2em; 
-    }
-}
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 991px) {
     .sticky {
         position: sticky;
         top: 0;
@@ -104,20 +53,11 @@
         background-color: var(--dark);  
         width: 100%;
         font-size: 1.2em; 
-    }
-    
-    .header-box{
-        margin-right: 0rem;
-        width: 100%;
+        justify-content: space-between; 
     }
     
     .header-logo{
         color: white;
-    }
-    
-    .header-logo:hover{
-        color: var(--light);
-        transition: .3s;
     }
     
     .nav-bar{
@@ -129,10 +69,7 @@
         transition: .3s;
     }
     
-    .nav-list-item:hover{
-        color: var(--light);
-        transition: .3s;
-    }
+
 }
 
 

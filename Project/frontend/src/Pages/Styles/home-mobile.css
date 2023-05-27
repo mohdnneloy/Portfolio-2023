@@ -1,5 +1,5 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 991px) {
     
     .main{
         background-color: var(--dark);
@@ -10,7 +10,7 @@
         flex-wrap: nowrap;
         align-items: center;
         margin: 0rem;
-        padding: 0rem;
+        padding: 5rem;
     }
     
     .box{
@@ -19,7 +19,7 @@
     }
 
     .details{
-        margin-top: -12rem;
+        margin-top: -6rem;
         line-height: 3em;
         width: 100%;
         font-size: 1.55em; 
@@ -32,11 +32,11 @@
 
     .image{
         margin-top: 2rem;
-        margin-left: -10rem;
+        margin-left: 10rem;
     }
     
     .right-image{
-        width: 150%;
+        width: 90%;
         display: block;
         
     }
@@ -114,7 +114,7 @@
     
     .left-image{
         border-radius: 1rem;
-        max-width: 100%;
+        max-width: 50%;
         margin-left: 0rem;
         margin-top: 0rem;
     }
@@ -155,7 +155,7 @@
     .experience{
         background-color: var(--dark);
         color: white;
-        padding: 10rem 0rem;
+        padding: 2rem 0rem;
         margin-top: -6rem;
     }
     
@@ -241,7 +241,7 @@
     /*Skills =================================================*/
     
     .skills{
-        margin-top: -3rem;
+        margin-top: 8rem;
         padding-bottom: 12rem;
     }
     
@@ -325,7 +325,7 @@
     /*Education Section ==================================*/
     
     .education{
-        margin-top: -5rem;
+        margin-top: 0rem;
         max-width: 100%;
     }
     
@@ -334,6 +334,7 @@
         align-items: center;
         justify-content: center;
         margin-top: -6rem;
+        margin-left: 35rem;
     }
     
     .checkpoints{
@@ -401,7 +402,7 @@
     /*Projects Section ==================================*/
     
     .projects{
-        margin-top: -5rem;
+        margin-top: 8rem;
     }
     .project-selector{
         text-align: center;
@@ -500,7 +501,7 @@
     
     .contact{
         padding: 10rem 0rem;
-        margin-top: -2rem;
+        margin-top: 2rem;
     }
     
     .contact-form{

@@ -6,7 +6,6 @@ import emailjs from '@emailjs/browser';
 
 /*CSS Content*/
 import './Styles/home.css'
-import './Styles/home-tablet.css'
 import './Styles/home-mobile.css'
 
 /*Images*/

@@ -19,6 +19,16 @@
         margin-left: 20rem;
     }
     
+
+    .image{
+        margin: -10rem 0rem 0rem -10rem;
+    
+    }
+    
+    .right-image{
+        width: 100%;
+    }
+
     .button{
         margin-top: 2rem;
         background-color: var(--normal);
@@ -67,14 +77,7 @@
         transition: 0.3s;
     }
     
-    .image{
-        margin: -10rem 0rem 0rem -10rem;
     
-    }
-    
-    .right-image{
-        width: 100%;
-    }
     
     /*About Me Section ======================================*/
     
@@ -501,3 +504,5 @@
         margin-bottom: 0.5rem;
     }    
 }
+
+
