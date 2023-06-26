@@ -12,6 +12,9 @@ import './Styles/home-mobile.css'
 import myimage from '../Images/Neloy6.png'
 import myimage2 from '../Images/Neloy5.jpg'
 import hectic10 from '../Images/HECTIC10/Logo.jpg'
+import choice from '../Images/Choice/Choice.png'
+import spitrack from '../Images/Spitrack/Spitrack.jpg'
+import cymed from '../Images/Cymed/Cymed.jpg'
 
 /*Files*/
 import CV from '../Files/Neloy - CV 2023.pdf'
@@ -526,6 +529,51 @@ const Home = () => {
                                     <a className='social-media-link-a' href="https://www.facebook.com/thehectic10" target="_blank"><BsFacebook size={16}  className='social-media-link' /></a>
                                     <a className='social-media-link-a' href="https://www.instagram.com/thehectic10/" target="_blank"><RiInstagramFill size={18}  className='social-media-link' /></a>
                                     <a className='social-media-link-a' href="https://www.tiktok.com/@thehectic10" target="_blank"><FaTiktok size={16} className='social-media-link' /></a>
+                                </div>
+                            </div>
+                        </div>
+                        }
+
+                        { (all == true || webapps == true || researches == true) &&
+
+                        <div class="card project">
+                            <img class="project-image" src={choice} alt="Project Image"/>
+                            <div class="card-body">
+                                <h5 class="card-title">Choice</h5>
+                                <p class="card-text">Choice is a remote voting system web-application based on biometric authentication, blockchain and smart contracts. The implementation paper of this project has over 700+ downloads and it is the top most downloaded paper of IET Blockchain in 2023.</p>
+                                <div className="project-social-media-links">
+                                    <a className='social-media-link-a' href="https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/blc2.12021" target="_blank"><ArticleIcon size={16}  className='social-media-link' /></a>
+                                    <a className='social-media-link-a' href="https://github.com/mohdnneloy/Choice" target="_blank"><GitHubIcon size={16} className='social-media-link' /></a>
+                                </div>
+                            </div>
+                        </div>
+                        }
+
+                        { (all == true || webapps == true) &&
+
+                        <div class="card project">
+                            <img class="project-image" src={spitrack} alt="Project Image"/>
+                            <div class="card-body">
+                                <h5 class="card-title">Spitrack</h5>
+                                <p class="card-text">Spitrack is a web based search engine that uses crawling and scraping strategies to search some specific content out of a given cluster of URLs (Unified Resource Locator). The application is mainly focused on simplifying research strategies for researchers.</p>
+                                <div className="project-social-media-links">
+                                <a className='social-media-link-a' href="https://github.com/mohdnneloy/Spitrack/blob/master/Documents/CSE299_Project%20Update%205%20(Final)_Eccentrics.pdf" target="_blank"><ArticleIcon size={16}  className='social-media-link' /></a>
+                                    <a className='social-media-link-a' href="https://github.com/mohdnneloy/Spitrack" target="_blank"><GitHubIcon size={16} className='social-media-link' /></a>
+                                </div>
+                            </div>
+                        </div>
+                        }
+
+                        { (all == true || webapps == true) &&
+
+                        <div class="card project">
+                            <img class="project-image" src={cymed} alt="Project Image"/>
+                            <div class="card-body">
+                                <h5 class="card-title">Cymed</h5>
+                                <p class="card-text">Cymed is a medical service providing, web-application, that facilitates the process of scheduling appointments, generating online prescriptions, and keeping lifetime prescription records.</p>
+                                <div className="project-social-media-links">
+                                <a className='social-media-link-a' href="https://github.com/mohdnneloy/Cymed/blob/master/Documents/CSE482L.2_Group%207_Team%20Eccentrics_Project%20Report%20Presentation.pdf" target="_blank"><ArticleIcon size={16}  className='social-media-link' /></a>
+                                    <a className='social-media-link-a' href="https://github.com/mohdnneloy/Cymed" target="_blank"><GitHubIcon size={16} className='social-media-link' /></a>
                                 </div>
                             </div>
                         </div>

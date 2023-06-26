@@ -446,11 +446,12 @@
         margin-top: 5rem;
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         justify-content: center;
     }
     
     .project{
-        margin: 0rem 1rem;
+        margin: 1rem 1rem;
         border: none;
         border-top-left-radius: 2rem;
         border-top-right-radius: 2rem;
