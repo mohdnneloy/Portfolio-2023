@@ -1,5 +1,5 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1199px) {
     
     .main{
         background-color: var(--dark);
@@ -22,7 +22,7 @@
         margin-top: -6rem;
         line-height: 3em;
         width: 100%;
-        font-size: 1.55em; 
+        font-size: 1.25em; 
     }
     
     .details h2{
@@ -57,7 +57,7 @@
         border-color: var(--normal);
         color: var(--dark);
         border-radius: 0.25rem;
-        padding: 0.5rem 1rem;
+        padding: 1rem 2rem;
         transition: 0.3s;
         
     }
@@ -71,11 +71,11 @@
     }
     
     .social-media-links{
-        padding: 0rem 0rem 0rem 0rem;
+        padding: 0rem 0rem 0rem 1.5rem;
     }
     
     .social-media-link{
-        transform: scale(2.5);
+        transform: scale(2);
     }
     
     .social-media-link-a:nth-child(1){
@@ -127,21 +127,21 @@
     }
 
     .section-heading{
-        font-size: 3em; 
+        font-size: 2.5em; 
         padding: 2rem;
         
     }
     
     .section-sub-heading{
         color: var(--yellow);
-        font-size: 1.75em; 
+        font-size: 1.55em; 
         padding: 0rem;
         
     }
     
     .section-paragraph{
         padding: 2rem 1.5rem 2rem 1.5rem;
-        font-size: 1.75em; 
+        font-size: 1.55em; 
         text-align: justify;
     }
     
@@ -150,7 +150,7 @@
     .experience-heading{
         text-align: center;
         padding: 1rem 0rem 4rem 0rem;
-        font-size: 3em; 
+        font-size: 2.2em; 
     }
     .experience{
         background-color: var(--dark);
@@ -183,19 +183,6 @@
         font-size: 1.5em; 
     }
     
-    .experience-container:hover{
-        padding: 2rem;
-        border-radius: 0.25rem;
-        text-align: center;
-        margin: 0.75rem;
-        background-color: var(--normal);
-        height: auto;
-        font-size: 0.95em;
-        transition: 0.3s;
-        width: 60%;
-        font-size: 1.5em; 
-    }
-    
     .icon{
         transform: scale(3);
         margin: 4rem;
@@ -207,13 +194,14 @@
         padding: 0.25rem 0rem;
         color: var(--yellow);
         font-weight: var(--font-bold);
-        font-size: 1.5em; 
+        font-size: 1.2em; 
     }
     
     .information{
-        padding: 2rem 2rem;
+        padding: 1rem 1rem;
         color:white;
         text-align: center;
+        font-size: 0.7em; 
     }
     
     .experience-button{
@@ -223,7 +211,7 @@
         border-radius: 0.25rem;
         padding: 1rem 2rem;
         transition: 0.3s;
-        font-size: 1em;  
+        font-size: 0.8em;  
     }
     
     .experience-button:hover{
@@ -234,7 +222,7 @@
         border-radius: 0.25rem;
         padding: 1rem 2rem;
         transition: 0.3s;
-        font-size: 1em; 
+        font-size: 0.8em; 
         
     }
     
@@ -246,26 +234,13 @@
     }
     
     .skill-flex-container{
-        padding: 1rem 0rem;
+        padding: 0rem 2rem;
     }
     
     .technical-skills-containter{
         text-align: left;
         width: 80%;
-        padding: 1rem 0.5rem;
-        border-radius: 0.25rem;
-        margin: 1rem 0.5rem;
-        background-color: var(--normal);
-        height: auto;
-        font-size: 0.95em;
-        transition: 0.2s;
-        
-    }
-    
-    .technical-skills-containter:hover{
-        text-align: left;
-        width: 80%;
-        padding: 1rem 0.5rem;
+        padding: 1rem 4rem;
         border-radius: 0.25rem;
         margin: 1rem 0.5rem;
         background-color: var(--normal);
@@ -278,30 +253,32 @@
     
     .technical-skills-title{
         text-align: center;
-        padding: 1.5rem 0rem;
+        padding: 1.2rem 0rem;
         color: white;
-        font-size: 2em; 
+        font-size: 1.5em; 
     }
     
     .skill-title{
         color: var(--yellow);
-        font-size: 1.5em;
+        font-size: 1.0em;
     }
     
     .skill-icon{
-        transform: scale(1.2);
+        transform: scale(1);
         margin: 0rem 1rem;
         color: white;
         filter: drop-shadow(0rem 0.1rem 0.25rem var(--dark));
     }
     
     .skill{
-        margin: 2rem 0rem 0.5rem 4rem;
+        margin: 2rem 0rem 0rem 0rem;
+        display: block;
+        width: 33%;
     }
     
     .skill-level{
         padding-left: 3.5rem;
-        font-size: 1.5em;
+        font-size: 1.0em;
     }
     
     .technical-skills{
@@ -311,14 +288,14 @@
     }
     
     .technical-skill-icon{
-        transform: scale(1.85);
+        transform: scale(1.2);
         margin: 0rem 0.75rem 0.25rem 0.5rem;
         color: white;
     }
     
     .dropdown-icon{
         color: var(--yellow);
-        transform: scale(1.5);
+        transform: scale(1.2);
         margin: 0rem 0.75rem 0.1rem 0.5rem;
     }
     
@@ -333,13 +310,14 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: -6rem;
+        margin-top: -2rem;
         margin-left: 35rem;
     }
     
     .checkpoints{
         text-align: left;
         margin-left: -33rem;
+        margin-top: -3.8rem;
     }
     
     .ebox{
@@ -355,18 +333,18 @@
     
     .line{
         width: 0.1rem;
-        height: 12rem;
+        height: 11.8rem;
         background-color: white;
         transform: translate(0.46rem, 0rem);
     }
     
     .education-content{
-        margin: 7rem 0rem 0rem 3rem;
+        margin: 2rem 0rem 0rem 3rem;
     }
     
     .qualification{
-        padding: 2.40rem 0rem;
-        font-size: 1.6em;
+        padding: 3rem 0rem;
+        font-size: 1.2em;
     }
     
     .qualification:nth-child(odd){
@@ -414,16 +392,16 @@
         margin: 0rem 0.5rem;
         padding: 0.5rem 1rem;
         transition: .2s;
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
     
     .project-button:hover{
-        color: white;
+        color: var(--light);
         border: none;
         margin: 0rem 0.5rem;
         padding: 0.5rem 1rem;
         transition: .2s;
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
     
     .selected{
@@ -468,15 +446,16 @@
     
     .project .card-title{
         color: var(--yellow);
-        padding: 0.5rem 1rem;
-        font-size: 2em;
+        padding: 2rem 2.9rem 0rem 2.8rem;
+        font-size: 1.6em;
+        text-align: left;
     }
     
     .project .card-text{
-        text-align: justify;
+        text-align: left;
         color: white;
-        padding: 1rem 2rem;
-        font-size: 1.5em;
+        padding: 1rem 3rem;
+        font-size: 1.0em;
     }
     
     .project .card-body{
@@ -489,6 +468,7 @@
     
     .project-social-media-links .social-media-link{
         color: white;
+        transform: scale(1.9);
     }
     
     .project-social-media-links .social-media-link:hover{
@@ -519,7 +499,7 @@
         background-color: var(--dark);
         color: white;
         margin: 0.75rem 0rem;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
     
     .contact-form textarea{

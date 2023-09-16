@@ -98,7 +98,7 @@ const Home = () => {
 
                         <TypeAnimation
                             sequence={[
-                                'Software Developer',
+                                'Software Engineer',
                                 1000,
                                 'Gaming Video Creator',
                                 2000,
@@ -149,9 +149,8 @@ const Home = () => {
                     <div data-aos="fade-right" className="box details2">
                         <h1 className="section-heading">About Me</h1>
                         <h4 className='section-sub-heading'>Working On A New Project? Hire Me or Let's Collaborate!</h4>
-                        <p className='section-paragraph'>I'm an enthusiastic fresh graduate of computer science with an innovative mind and experience in software development,
-                            graphics designing as well as video editing
-                            obtained from personal projects.
+                        <p className='section-paragraph'>I'm an Software Engineer with a passion for technology and creativity. I enjoy solving complex problems and create innovative solutions through software.
+                        Besides developing applications, I also like to design graphics, and make gaming, music and tutorial videos on youtube. If you have any project in mind for which my skills would be beneficial feel free to contact me.  
                         </p>
                     </div>
 
@@ -230,7 +229,7 @@ const Home = () => {
 
                                     <div className="skill">
                                         <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />React.js</h5>
-                                        <p className="skill-level">Beginner</p>
+                                        <p className="skill-level">Intermediate</p>
                                     </div>
 
                                     <div className="skill">
@@ -253,7 +252,7 @@ const Home = () => {
                                     </div>
 
                                     <div className="skill">
-                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />XAMPP</h5>
+                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Mongo</h5>
                                         <p className="skill-level">Intermediate</p>
                                     </div>
 
@@ -264,12 +263,37 @@ const Home = () => {
 
                                     <div className="skill">
                                         <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Django</h5>
+                                        <p className="skill-level">Intermediate</p>
+                                    </div>
+
+                                    <div className="skill">
+                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Flask</h5>
+                                        <p className="skill-level">Intermediate</p>
+                                    </div>
+
+                                    <div className="skill">
+                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Perl</h5>
+                                        <p className="skill-level">Intermediate</p>
+                                    </div>
+
+                                    <div className="skill">
+                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Plack</h5>
+                                        <p className="skill-level">Beginner</p>
+                                    </div>
+
+                                    <div className="skill">
+                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Java</h5>
+                                        <p className="skill-level">Intermediate</p>
+                                    </div>
+
+                                    <div className="skill">
+                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Spring</h5>
                                         <p className="skill-level">Beginner</p>
                                     </div>
 
                                     <div className="skill">
                                         <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />REST API</h5>
-                                        <p className="skill-level">Beginner</p>
+                                        <p className="skill-level">Intermediate</p>
                                     </div>
 
                                     <div className="skill">
@@ -289,7 +313,7 @@ const Home = () => {
 
                                     <div className="skill">
                                         <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Git</h5>
-                                        <p className="skill-level">Intermediate</p>
+                                        <p className="skill-level">Professional</p>
                                     </div>
 
                                 </div>
@@ -542,8 +566,8 @@ const Home = () => {
                                 <h5 class="card-title">Choice</h5>
                                 <p class="card-text">Choice is a remote voting system web-application based on biometric authentication, blockchain and smart contracts. The implementation paper of this project has over 700+ downloads and it is the top most downloaded paper of IET Blockchain in 2023.</p>
                                 <div className="project-social-media-links">
-                                    <a className='social-media-link-a' href="https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/blc2.12021" target="_blank"><ArticleIcon size={16}  className='social-media-link' /></a>
-                                    <a className='social-media-link-a' href="https://github.com/mohdnneloy/Choice" target="_blank"><GitHubIcon size={16} className='social-media-link' /></a>
+                                    <a className='social-media-link-a' href="https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/blc2.12021" target="_blank"><ArticleIcon size={14}  className='social-media-link' /></a>
+                                    <a className='social-media-link-a' href="https://github.com/mohdnneloy/Choice" target="_blank"><GitHubIcon size={14} className='social-media-link' /></a>
                                 </div>
                             </div>
                         </div>
@@ -557,8 +581,8 @@ const Home = () => {
                                 <h5 class="card-title">Spitrack</h5>
                                 <p class="card-text">Spitrack is a web based search engine that uses crawling and scraping strategies to search some specific content out of a given cluster of URLs (Unified Resource Locator). The application is mainly focused on simplifying research strategies for researchers.</p>
                                 <div className="project-social-media-links">
-                                <a className='social-media-link-a' href="https://github.com/mohdnneloy/Spitrack/blob/master/Documents/CSE299_Project%20Update%205%20(Final)_Eccentrics.pdf" target="_blank"><ArticleIcon size={16}  className='social-media-link' /></a>
-                                    <a className='social-media-link-a' href="https://github.com/mohdnneloy/Spitrack" target="_blank"><GitHubIcon size={16} className='social-media-link' /></a>
+                                <a className='social-media-link-a' href="https://github.com/mohdnneloy/Spitrack/blob/master/Documents/CSE299_Project%20Update%205%20(Final)_Eccentrics.pdf" target="_blank"><ArticleIcon size={14}  className='social-media-link' /></a>
+                                    <a className='social-media-link-a' href="https://github.com/mohdnneloy/Spitrack" target="_blank"><GitHubIcon size={14} className='social-media-link' /></a>
                                 </div>
                             </div>
                         </div>
