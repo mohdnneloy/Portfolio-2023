@@ -298,6 +298,19 @@
         transform: scale(1.2);
         margin: 0rem 0.75rem 0.1rem 0.5rem;
     }
+
+    /*Work Experience Section ============================*/
+
+    #work-experience .education-content{
+        margin: 3.5rem 0rem 0rem 3rem;
+    }
+
+    #work-experience .line{
+        width: 0.1rem;
+        height: 13.5rem;
+        background-color: white;
+        transform: translate(0.46rem, 0rem);
+    }
     
     /*Education Section ==================================*/
     
@@ -431,8 +444,7 @@
     .project{
         margin: 1rem 1rem;
         border: none;
-        border-top-left-radius: 2rem;
-        border-top-right-radius: 2rem;
+        border-radius: 2rem;
         width: 80%;
         text-align: center;
         background-color: var(--normal);
@@ -455,7 +467,7 @@
         text-align: left;
         color: white;
         padding: 1rem 3rem;
-        font-size: 1.0em;
+        font-size: small;
     }
     
     .project .card-body{

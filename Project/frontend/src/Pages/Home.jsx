@@ -37,6 +37,7 @@ import ComputerIcon from '@mui/icons-material/Computer';
 import SettingsApplicationsIcon from '@mui/icons-material/SettingsApplications';
 import LibraryMusicIcon from '@mui/icons-material/LibraryMusic';
 import LanguageIcon from '@mui/icons-material/Language';
+import SchoolIcon from '@mui/icons-material/School';
 
 /*Social Media Icons*/
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -165,14 +166,14 @@ const Home = () => {
                         <div className="experience-container">
                             <MonitorIcon className="icon" />
                             <h4 className="title">Web Developer</h4>
-                            <p className="information">I have an experience of 2+ years in developing dynamic web-applications and static websites. I can build both frontend and backend web-applications using React.js and Django. I can also build wordpress websites on demand.</p>
+                            <p className="information">I have an experience of 3+ years in developing dynamic web-applications and static websites. I can build both frontend and backend web-applications using React.js and Django. I can also build wordpress websites on demand.</p>
                             <a href="#projects" className='btn experience-button'>Checkout Projects</a>
                         </div>
 
                         <div className="experience-container video-creator">
                             <MovieCreationIcon className="icon" />
                             <h4 className="title">Video-Creator</h4>
-                            <p className="information">I have an experience of 3+ years in creating youtube videos. I create gameplay and tutorial videos alongside with shorts on my youtube channel. </p>
+                            <p className="information">I have an experience of 4+ years in creating youtube videos. I create gameplay and tutorial videos alongside shorts on my youtube channel. </p>
                             <a href="#projects" className='btn experience-button'>Checkout Projects</a>
                         </div>
 
@@ -186,7 +187,7 @@ const Home = () => {
                         <div className="experience-container researcher">
                             <ArticleIcon className="icon" />
                             <h4 className="title">Researcher</h4>
-                            <p className="information">I have an experience of 6 months working as a reasearch intern. I have published a research paper in IET Blockchain on the last year of my Bachelor's Degree. Checkout my paper provided in the projects section.</p>
+                            <p className="information">I have an experience of 6 months working as a reasearch intern for the final year project. I have published a two research papers focused on AI and Blockchain. Checkout my papers provided in the projects section.</p>
                             <a href="#projects" className='btn experience-button'>Checkout Projects</a>
                         </div>
 
@@ -313,6 +314,11 @@ const Home = () => {
 
                                     <div className="skill">
                                         <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Git</h5>
+                                        <p className="skill-level">Professional</p>
+                                    </div>
+
+                                    <div className="skill">
+                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />AWS BedRock</h5>
                                         <p className="skill-level">Professional</p>
                                     </div>
 
@@ -484,6 +490,45 @@ const Home = () => {
 
                 </div>
 
+                <div className="education experience" id='work-experience'>
+
+                    <h1 data-aos="fade-right" className='education-heading experience-heading'>Work Experience</h1>
+
+                    <div className="roadmap">
+
+                        <div data-aos="fade-up" className="checkpoints e-box">
+                            <div data-aos="fade-up" className="round"></div>
+                            <div className="line"></div>
+                            <div data-aos="fade-up" className="round"></div>
+                            <div className="line"></div>
+                            <div data-aos="fade-up" className="round"></div>
+                        </div>
+
+                        <div data-aos="fade-up" className="education-content e-box">
+                            <div data-aos="fade-up" className="qualification">
+                                <h5 className='qualification-title'>Jr. Software Engineer</h5>
+                                <h6 className="qualification-school">Full-Time</h6>
+                                <h6 className="qualification-school">W3 Engineers LTD, Dhaka, Bangladesh</h6>
+                                <p className="qualification-date"><CalendarMonthIcon className="qualification-date-icon" /> August, 2023 - Present</p>
+                            </div>
+                            <div data-aos="fade-up" className="qualification">
+                                <h5 className='qualification-title'>Intern - Software Engineer</h5>
+                                <h6 className="qualification-school">Contract</h6>
+                                <h6 className="qualification-school">W3 Engineers LTD, Dhaka, Bangladesh</h6>
+                                <p className="qualification-date"><CalendarMonthIcon className="qualification-date-icon" /> March, 2023 - August, 2023</p>
+                            </div>
+                            <div data-aos="fade-up" className="qualification">
+                                <h5 className='qualification-title'>Gaming Video Creator</h5>
+                                <h6 className="qualification-school">Self-Employed</h6>
+                                <h6 className="qualification-school">HECTIC10</h6>
+                                <p className="qualification-date"><CalendarMonthIcon className="qualification-date-icon" /> November, 2018 - Present</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
 
                 <div className="education experience" id='education'>
 
@@ -547,7 +592,7 @@ const Home = () => {
                             <img class="project-image" src={hectic10} alt="Project Image"/>
                             <div class="card-body">
                                 <h5 class="card-title">HECTIC10</h5>
-                                <p class="card-text">Hectic10 is a channel that focuses on gaming related content like gameplay videos, tutorials for game related problems and funny clips. This channel have an overall of 200K+ views and about 400+ subscribers.</p>
+                                <p class="card-text">Hectic10 is a channel that focuses on gaming related content like gameplay videos, tutorials for game related problems and funny clips. This channel have an overall of 1M+ views and about 1.3K+ subscribers.</p>
                                 <div className="project-social-media-links">
                                     <a className='social-media-link-a' href="https://www.youtube.com/@HECTIC10" target="_blank"><BsYoutube size={18}  className='social-media-link' /></a>
                                     <a className='social-media-link-a' href="https://www.facebook.com/thehectic10" target="_blank"><BsFacebook size={16}  className='social-media-link' /></a>
@@ -567,7 +612,22 @@ const Home = () => {
                                 <p class="card-text">Choice is a remote voting system web-application based on biometric authentication, blockchain and smart contracts. The implementation paper of this project has over 700+ downloads and it is the top most downloaded paper of IET Blockchain in 2023.</p>
                                 <div className="project-social-media-links">
                                     <a className='social-media-link-a' href="https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/blc2.12021" target="_blank"><ArticleIcon size={14}  className='social-media-link' /></a>
-                                    <a className='social-media-link-a' href="https://github.com/mohdnneloy/Choice" target="_blank"><GitHubIcon size={14} className='social-media-link' /></a>
+                                    <a className='social-media-link-a' href="https://scholar.google.com/citations?user=aNSGbYgAAAAJ&hl=en" target="_blank"><SchoolIcon size={14} className='social-media-link' /></a>
+                                </div>
+                            </div>
+                        </div>
+                        }
+
+                        { (all == true || webapps == true || researches == true) &&
+
+                        <div class="card project">
+                            <img class="project-image" src={choice} alt="Project Image"/>
+                            <div class="card-body">
+                                <h5 class="card-title">Chipless RFID</h5>
+                                <p class="card-text">This study conducts a thorough investigation of multiple deep learning techniques to enhance the detection capability of deep learning-based chipless RFID tags. It offers valuable insights for advancing chipless RFID technology.</p>
+                                <div className="project-social-media-links">
+                                    <a className='social-media-link-a' href="https://www.tandfonline.com/doi/full/10.1080/24751839.2023.2300223" target="_blank"><ArticleIcon size={14}  className='social-media-link' /></a>
+                                    <a className='social-media-link-a' href="https://scholar.google.com/citations?user=aNSGbYgAAAAJ&hl=en" target="_blank"><SchoolIcon size={14} className='social-media-link' /></a>
                                 </div>
                             </div>
                         </div>
@@ -579,7 +639,7 @@ const Home = () => {
                             <img class="project-image" src={spitrack} alt="Project Image"/>
                             <div class="card-body">
                                 <h5 class="card-title">Spitrack</h5>
-                                <p class="card-text">Spitrack is a web based search engine that uses crawling and scraping strategies to search some specific content out of a given cluster of URLs (Unified Resource Locator). The application is mainly focused on simplifying research strategies for researchers.</p>
+                                <p class="card-text">Spitrack is a web-based search engine employing crawling and scraping methods to extract specific content from a cluster of URLs. It aims to streamline research strategies for researchers.</p>
                                 <div className="project-social-media-links">
                                 <a className='social-media-link-a' href="https://github.com/mohdnneloy/Spitrack/blob/master/Documents/CSE299_Project%20Update%205%20(Final)_Eccentrics.pdf" target="_blank"><ArticleIcon size={14}  className='social-media-link' /></a>
                                     <a className='social-media-link-a' href="https://github.com/mohdnneloy/Spitrack" target="_blank"><GitHubIcon size={14} className='social-media-link' /></a>
@@ -594,7 +654,7 @@ const Home = () => {
                             <img class="project-image" src={cymed} alt="Project Image"/>
                             <div class="card-body">
                                 <h5 class="card-title">Cymed</h5>
-                                <p class="card-text">Cymed is a medical service providing, web-application, that facilitates the process of scheduling appointments, generating online prescriptions, and keeping lifetime prescription records.</p>
+                                <p class="card-text">Cymed streamlines healthcare processes with appointment scheduling, online prescriptions, and lifetime record management for patients and providers.</p>
                                 <div className="project-social-media-links">
                                 <a className='social-media-link-a' href="https://github.com/mohdnneloy/Cymed/blob/master/Documents/CSE482L.2_Group%207_Team%20Eccentrics_Project%20Report%20Presentation.pdf" target="_blank"><ArticleIcon size={16}  className='social-media-link' /></a>
                                     <a className='social-media-link-a' href="https://github.com/mohdnneloy/Cymed" target="_blank"><GitHubIcon size={16} className='social-media-link' /></a>
