@@ -15,9 +15,10 @@ import hectic10 from '../Images/HECTIC10/Logo.jpg'
 import choice from '../Images/Choice/Choice.png'
 import spitrack from '../Images/Spitrack/Spitrack.jpg'
 import cymed from '../Images/Cymed/Cymed.jpg'
+import chipless_rfid from '../Images/Chipless_RFID/chipless_rfid.png'
 
 /*Files*/
-import CV from '../Files/Neloy - CV 2023.pdf'
+import CV from '../Files/Neloy - CV 2024.pdf'
 
 
 /*Animations*/
@@ -38,6 +39,9 @@ import SettingsApplicationsIcon from '@mui/icons-material/SettingsApplications';
 import LibraryMusicIcon from '@mui/icons-material/LibraryMusic';
 import LanguageIcon from '@mui/icons-material/Language';
 import SchoolIcon from '@mui/icons-material/School';
+import TerminalIcon from '@mui/icons-material/Terminal';
+import StorageIcon from '@mui/icons-material/Storage';
+import ForkLeftIcon from '@mui/icons-material/ForkLeft';
 
 /*Social Media Icons*/
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -57,7 +61,6 @@ const Home = () => {
     const [all, setAll] = useState(true);
     const [webapps, setWebapps] = useState(false);
     const [channels, setChannels] = useState(false);
-    const [designs, setDesigns] = useState(false);
     const [researches, setResearches] = useState(false);
     
     /* Contact Form Reference*/
@@ -166,28 +169,28 @@ const Home = () => {
                         <div className="experience-container">
                             <MonitorIcon className="icon" />
                             <h4 className="title">Web Developer</h4>
-                            <p className="information">I have an experience of 3+ years in developing dynamic web-applications and static websites. I can build both frontend and backend web-applications using React.js and Django. I can also build wordpress websites on demand.</p>
+                            <p className="information">I have an experience of 4+ years in developing dynamic web-applications and static websites. I can build both frontend and backend web-applications using React.js and Django. I can also build wordpress websites on demand.</p>
                             <a href="#projects" className='btn experience-button'>Checkout Projects</a>
                         </div>
 
                         <div className="experience-container video-creator">
                             <MovieCreationIcon className="icon" />
                             <h4 className="title">Video-Creator</h4>
-                            <p className="information">I have an experience of 4+ years in creating youtube videos. I create gameplay and tutorial videos alongside shorts on my youtube channel. </p>
+                            <p className="information">I have an experience of 5+ years in creating youtube videos. I create gameplay and tutorial videos alongside shorts on my youtube channel. </p>
                             <a href="#projects" className='btn experience-button'>Checkout Projects</a>
                         </div>
 
                         <div className="experience-container graphics-designer">
                             <BrushIcon className="icon" />
                             <h4 className="title">Graphics Designer</h4>
-                            <p className="information">I have an experience of 3+ years in designing logos, thumbnails, banners, business cards and websites. Checkout my designs on my pinterest profile for more details.</p>
+                            <p className="information">I have an experience of 4+ years in designing logos, thumbnails, banners, business cards and websites. Checkout my designs on my pinterest profile for more details.</p>
                             <a href="#projects" className='btn experience-button'>Checkout Projects</a>
                         </div>
 
                         <div className="experience-container researcher">
                             <ArticleIcon className="icon" />
                             <h4 className="title">Researcher</h4>
-                            <p className="information">I have an experience of 6 months working as a reasearch intern for the final year project. I have published a two research papers focused on AI and Blockchain. Checkout my papers provided in the projects section.</p>
+                            <p className="information">I have an experience of 6 months working as a reasearch intern for the final year project. I have published two research papers focused on AI and Blockchain. Checkout my papers provided in the projects section.</p>
                             <a href="#projects" className='btn experience-button'>Checkout Projects</a>
                         </div>
 
@@ -203,24 +206,19 @@ const Home = () => {
                     <div data-aos="fade-up" className="skill-flex-container experience-flex-container">
 
                         <div className="technical-skills-containter">
-                            <Collapsible trigger={<h4 className="technical-skills-title title"><ComputerIcon className="technical-skill-icon" /> Web (Frontend) <ArrowDropDownCircleIcon className="dropdown-icon"/></h4>}>
+                            <Collapsible trigger={<h4 className="technical-skills-title title"><TerminalIcon className="technical-skill-icon" /> Technical Languages <ArrowDropDownCircleIcon className="dropdown-icon"/></h4>}>
 
 
                                 <div className="technical-skills">
 
                                     <div className="skill">
                                         <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />HTML</h5>
-                                        <p className="skill-level">Intermediate</p>
+                                        <p className="skill-level">Professional</p>
                                     </div>
 
                                     <div className="skill">
                                         <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />CSS</h5>
-                                        <p className="skill-level">Intermediate</p>
-                                    </div>
-
-                                    <div className="skill">
-                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Bootstrap</h5>
-                                        <p className="skill-level">Intermediate</p>
+                                        <p className="skill-level">Professional</p>
                                     </div>
 
                                     <div className="skill">
@@ -229,57 +227,8 @@ const Home = () => {
                                     </div>
 
                                     <div className="skill">
-                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />React.js</h5>
-                                        <p className="skill-level">Intermediate</p>
-                                    </div>
-
-                                    <div className="skill">
-                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Wordpress</h5>
-                                        <p className="skill-level">Intermediate</p>
-                                    </div>
-
-                                </div>
-                            </Collapsible>
-                        </div>
-
-                        <div className="technical-skills-containter">
-                            <Collapsible trigger={<h4 className="technical-skills-title title"><SettingsApplicationsIcon className="technical-skill-icon" /> Web (Backend) <ArrowDropDownCircleIcon className="dropdown-icon"/></h4>}>
-
-                                <div className="technical-skills">
-
-                                    <div className="skill">
-                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />MySQL</h5>
-                                        <p className="skill-level">Intermediate</p>
-                                    </div>
-
-                                    <div className="skill">
-                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Mongo</h5>
-                                        <p className="skill-level">Intermediate</p>
-                                    </div>
-
-                                    <div className="skill">
                                         <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Python</h5>
-                                        <p className="skill-level">Intermediate</p>
-                                    </div>
-
-                                    <div className="skill">
-                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Django</h5>
-                                        <p className="skill-level">Intermediate</p>
-                                    </div>
-
-                                    <div className="skill">
-                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Flask</h5>
-                                        <p className="skill-level">Intermediate</p>
-                                    </div>
-
-                                    <div className="skill">
-                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Perl</h5>
-                                        <p className="skill-level">Intermediate</p>
-                                    </div>
-
-                                    <div className="skill">
-                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Plack</h5>
-                                        <p className="skill-level">Beginner</p>
+                                        <p className="skill-level">Professional</p>
                                     </div>
 
                                     <div className="skill">
@@ -288,18 +237,8 @@ const Home = () => {
                                     </div>
 
                                     <div className="skill">
-                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Spring</h5>
-                                        <p className="skill-level">Beginner</p>
-                                    </div>
-
-                                    <div className="skill">
-                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />REST API</h5>
+                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Perl</h5>
                                         <p className="skill-level">Intermediate</p>
-                                    </div>
-
-                                    <div className="skill">
-                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Blockchain</h5>
-                                        <p className="skill-level">Beginner</p>
                                     </div>
 
                                     <div className="skill">
@@ -312,23 +251,144 @@ const Home = () => {
                                         <p className="skill-level">Intermediate</p>
                                     </div>
 
+                                </div>
+                            </Collapsible>
+                        </div>
+
+                        <div className="technical-skills-containter">
+                            <Collapsible trigger={<h4 className="technical-skills-title title"><ComputerIcon className="technical-skill-icon" /> Frontend <ArrowDropDownCircleIcon className="dropdown-icon"/></h4>}>
+
+
+                                <div className="technical-skills">
+
                                     <div className="skill">
-                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Git</h5>
-                                        <p className="skill-level">Professional</p>
+                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />React JS</h5>
+                                        <p className="skill-level">Intermediate</p>
+                                    </div>
+
+                                    <div className="skill">
+                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Next JS</h5>
+                                        <p className="skill-level">Intermediate</p>
+                                    </div>
+
+                                    <div className="skill">
+                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Bootstrap</h5>
+                                        <p className="skill-level">Intermediate</p>
+                                    </div>
+
+                                    <div className="skill">
+                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Plack</h5>
+                                        <p className="skill-level">Intermediate</p>
+                                    </div>
+
+                                    <div className="skill">
+                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Grape JS</h5>
+                                        <p className="skill-level">Intermediate</p>
+                                    </div>
+                                </div>
+                            </Collapsible>
+                        </div>
+
+                        <div className="technical-skills-containter">
+                            <Collapsible trigger={<h4 className="technical-skills-title title"><SettingsApplicationsIcon className="technical-skill-icon" /> Backend <ArrowDropDownCircleIcon className="dropdown-icon"/></h4>}>
+
+
+                                <div className="technical-skills">
+
+                                    <div className="skill">
+                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Django</h5>
+                                        <p className="skill-level">Intermediate</p>
+                                    </div>
+
+                                    <div className="skill">
+                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Flask</h5>
+                                        <p className="skill-level">Intermediate</p>
+                                    </div>
+
+                                    <div className="skill">
+                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Spring Boot</h5>
+                                        <p className="skill-level">Beginner</p>
+                                    </div>
+
+                                    <div className="skill">
+                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Web3</h5>
+                                        <p className="skill-level">Beginner</p>
                                     </div>
 
                                     <div className="skill">
                                         <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />AWS BedRock</h5>
-                                        <p className="skill-level">Professional</p>
+                                        <p className="skill-level">Intermediate</p>
+                                    </div>
+                                </div>
+                            </Collapsible>
+                        </div>
+
+                        <div className="technical-skills-containter">
+                            <Collapsible trigger={<h4 className="technical-skills-title title"><StorageIcon className="technical-skill-icon" /> Database <ArrowDropDownCircleIcon className="dropdown-icon"/></h4>}>
+
+
+                                <div className="technical-skills">
+
+                                    <div className="skill">
+                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />MySQL</h5>
+                                        <p className="skill-level">Intermediate</p>
+                                    </div>
+
+                                    <div className="skill">
+                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />PostgreSQL</h5>
+                                        <p className="skill-level">Intermediate</p>
+                                    </div>
+
+                                    <div className="skill">
+                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />MongoDB</h5>
+                                        <p className="skill-level">Intermediate</p>
+                                    </div>
+
+                                    <div className="skill">
+                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />MariaDB</h5>
+                                        <p className="skill-level">Intermediate</p>
+                                    </div>
+
+                                    <div className="skill">
+                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />AWS RDS</h5>
+                                        <p className="skill-level">Intermediate</p>
+                                    </div>
+                                </div>
+                            </Collapsible>
+                        </div>
+
+                        <div className="technical-skills-containter">
+                            <Collapsible trigger={<h4 className="technical-skills-title title"><ForkLeftIcon className="technical-skill-icon" /> Version Control <ArrowDropDownCircleIcon className="dropdown-icon"/></h4>}>
+
+
+                                <div className="technical-skills">
+
+                                    <div className="skill">
+                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Git</h5>
+                                        <p className="skill-level">Intermediate</p>
+                                    </div>
+
+                                    <div className="skill">
+                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Github</h5>
+                                        <p className="skill-level">Intermediate</p>
+                                    </div>
+
+                                    <div className="skill">
+                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Gitlab</h5>
+                                        <p className="skill-level">Intermediate</p>
+                                    </div>
+
+                                    <div className="skill">
+                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Bitbucket</h5>
+                                        <p className="skill-level">Intermediate</p>
                                     </div>
 
                                 </div>
                             </Collapsible>
                         </div>
 
-
                         <div className="technical-skills-containter">
-                            <Collapsible trigger={<h4 className="technical-skills-title title"><ArticleIcon className="technical-skill-icon" /> Research / MS Office <ArrowDropDownCircleIcon className="dropdown-icon"/></h4>}>
+                            <Collapsible trigger={<h4 className="technical-skills-title title"><ArticleIcon className="technical-skill-icon" /> Office Tools <ArrowDropDownCircleIcon className="dropdown-icon"/></h4>}>
 
                                 <div className="technical-skills">
 
@@ -348,6 +408,16 @@ const Home = () => {
                                     </div>
 
                                     <div className="skill">
+                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Teams</h5>
+                                        <p className="skill-level">Intermediate</p>
+                                    </div>
+
+                                    <div className="skill">
+                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Jira</h5>
+                                        <p className="skill-level">Intermediate</p>
+                                    </div>
+
+                                    <div className="skill">
                                         <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Mendeley</h5>
                                         <p className="skill-level">Intermediate</p>
                                     </div>
@@ -361,9 +431,8 @@ const Home = () => {
                             </Collapsible>
                         </div>
 
-
                         <div className="technical-skills-containter">
-                            <Collapsible trigger={<h4 className="technical-skills-title title"><BrushIcon className="technical-skill-icon" /> Graphics (UI/UX) <ArrowDropDownCircleIcon className="dropdown-icon"/></h4>}>
+                            <Collapsible trigger={<h4 className="technical-skills-title title"><BrushIcon className="technical-skill-icon" /> Graphics <ArrowDropDownCircleIcon className="dropdown-icon"/></h4>}>
 
                                 <div className="technical-skills">
                                     <div className="skill">
@@ -577,11 +646,10 @@ const Home = () => {
                     <h1 data-aos="fade-right" className='experience-heading'>Projects</h1>
                     
                     <div data-aos="fade-down" className="project-selector">
-                        <button className={`project-button btn ${all ? "selected" : ""}`} onClick={() => { setAll(true); setWebapps(false); setChannels(false); setDesigns(false); setResearches(false)}}>All</button>
-                        <button className={`project-button btn ${webapps ? "selected" : ""}`} onClick={() => { setAll(false); setWebapps(true); setChannels(false); setDesigns(false); setResearches(false)}}>Web Apps</button>
-                        <button className={`project-button btn ${channels ? "selected" : ""}`} onClick={() => { setAll(false); setWebapps(false); setChannels(true); setDesigns(false); setResearches(false)}}>Channels</button>
-                        <button className={`project-button btn ${designs ? "selected" : ""}`} onClick={() => { setAll(false); setWebapps(false); setChannels(false); setDesigns(true); setResearches(false)}}>Designs</button>
-                        <button className={`project-button btn ${researches ? "selected" : ""}`} onClick={() => { setAll(false); setWebapps(false); setChannels(false); setDesigns(false); setResearches(true)}}>Researches</button>
+                        <button className={`project-button btn ${all ? "selected" : ""}`} onClick={() => { setAll(true); setWebapps(false); setChannels(false); setResearches(false)}}>All</button>
+                        <button className={`project-button btn ${webapps ? "selected" : ""}`} onClick={() => { setAll(false); setWebapps(true); setChannels(false); setResearches(false)}}>Web Apps</button>
+                        <button className={`project-button btn ${channels ? "selected" : ""}`} onClick={() => { setAll(false); setWebapps(false); setChannels(true); setResearches(false)}}>Channels</button>
+                        <button className={`project-button btn ${researches ? "selected" : ""}`} onClick={() => { setAll(false); setWebapps(false); setChannels(false); setResearches(true)}}>Researches</button>
                     </div>
 
                     <div data-aos="fade-up" className="project-container container">
@@ -621,7 +689,7 @@ const Home = () => {
                         { (all == true || webapps == true || researches == true) &&
 
                         <div class="card project">
-                            <img class="project-image" src={choice} alt="Project Image"/>
+                            <img class="project-image" src={chipless_rfid} alt="Project Image"/>
                             <div class="card-body">
                                 <h5 class="card-title">Chipless RFID</h5>
                                 <p class="card-text">This study conducts a thorough investigation of multiple deep learning techniques to enhance the detection capability of deep learning-based chipless RFID tags. It offers valuable insights for advancing chipless RFID technology.</p>
