@@ -42,6 +42,7 @@ import SchoolIcon from '@mui/icons-material/School';
 import TerminalIcon from '@mui/icons-material/Terminal';
 import StorageIcon from '@mui/icons-material/Storage';
 import ForkLeftIcon from '@mui/icons-material/ForkLeft';
+import DesktopWindowsRoundedIcon from '@mui/icons-material/DesktopWindowsRounded';
 
 /*Social Media Icons*/
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -248,7 +249,7 @@ const Home = () => {
 
                                     <div className="skill">
                                         <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />PHP</h5>
-                                        <p className="skill-level">Intermediate</p>
+                                        <p className="skill-level">Beginner</p>
                                     </div>
 
                                 </div>
@@ -268,7 +269,7 @@ const Home = () => {
 
                                     <div className="skill">
                                         <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Next JS</h5>
-                                        <p className="skill-level">Intermediate</p>
+                                        <p className="skill-level">Beginner</p>
                                     </div>
 
                                     <div className="skill">
@@ -283,7 +284,7 @@ const Home = () => {
 
                                     <div className="skill">
                                         <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Grape JS</h5>
-                                        <p className="skill-level">Intermediate</p>
+                                        <p className="skill-level">Beginner</p>
                                     </div>
                                 </div>
                             </Collapsible>
@@ -306,6 +307,11 @@ const Home = () => {
                                     </div>
 
                                     <div className="skill">
+                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />FastAPI</h5>
+                                        <p className="skill-level">Beginner</p>
+                                    </div>
+
+                                    <div className="skill">
                                         <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Spring Boot</h5>
                                         <p className="skill-level">Beginner</p>
                                     </div>
@@ -316,8 +322,87 @@ const Home = () => {
                                     </div>
 
                                     <div className="skill">
-                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />AWS BedRock</h5>
+                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Langchain</h5>
+                                        <p className="skill-level">Beginner</p>
+                                    </div>
+                                </div>
+                            </Collapsible>
+                        </div>
+
+                        <div className="technical-skills-containter">
+                            <Collapsible trigger={<h4 className="technical-skills-title title"><SettingsApplicationsIcon className="technical-skill-icon" /> AWS Services <ArrowDropDownCircleIcon className="dropdown-icon"/></h4>}>
+
+
+                                <div className="technical-skills">
+
+                                    <div className="skill">
+                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />S3</h5>
                                         <p className="skill-level">Intermediate</p>
+                                    </div>
+
+                                    <div className="skill">
+                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Bedrock</h5>
+                                        <p className="skill-level">Intermediate</p>
+                                    </div>
+
+                                    <div className="skill">
+                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />EC2</h5>
+                                        <p className="skill-level">Beginner</p>
+                                    </div>
+
+                                    <div className="skill">
+                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />EMR</h5>
+                                        <p className="skill-level">Intermediate</p>
+                                    </div>
+
+                                    <div className="skill">
+                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Data Stream</h5>
+                                        <p className="skill-level">Intermediate</p>
+                                    </div>
+
+                                    <div className="skill">
+                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Firehose</h5>
+                                        <p className="skill-level">Intermediate</p>
+                                    </div>
+
+                                    <div className="skill">
+                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />SQS</h5>
+                                        <p className="skill-level">Intermediate</p>
+                                    </div>
+
+                                    <div className="skill">
+                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />SNS</h5>
+                                        <p className="skill-level">Intermediate</p>
+                                    </div>
+
+                                    <div className="skill">
+                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Glue</h5>
+                                        <p className="skill-level">Intermediate</p>
+                                    </div>
+
+                                    <div className="skill">
+                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Athena</h5>
+                                        <p className="skill-level">Intermediate</p>
+                                    </div>
+
+                                    <div className="skill">
+                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Lambda</h5>
+                                        <p className="skill-level">Intermediate</p>
+                                    </div>
+
+                                    <div className="skill">
+                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Cloudwatch</h5>
+                                        <p className="skill-level">Intermediate</p>
+                                    </div>
+
+                                    <div className="skill">
+                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Batch</h5>
+                                        <p className="skill-level">Intermediate</p>
+                                    </div>
+
+                                    <div className="skill">
+                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Even Bridge</h5>
+                                        <p className="skill-level">Beginner</p>
                                     </div>
                                 </div>
                             </Collapsible>
@@ -350,7 +435,31 @@ const Home = () => {
                                     </div>
 
                                     <div className="skill">
-                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />AWS RDS</h5>
+                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />DynamoDB</h5>
+                                        <p className="skill-level">Intermediate</p>
+                                    </div>
+
+                                    <div className="skill">
+                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Open Search</h5>
+                                        <p className="skill-level">Intermediate</p>
+                                    </div>
+                                </div>
+                            </Collapsible>
+                        </div>
+
+                        <div className="technical-skills-containter">
+                            <Collapsible trigger={<h4 className="technical-skills-title title"><DesktopWindowsRoundedIcon className="technical-skill-icon" /> Operating Systems <ArrowDropDownCircleIcon className="dropdown-icon"/></h4>}>
+
+
+                                <div className="technical-skills">
+
+                                    <div className="skill">
+                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Windows</h5>
+                                        <p className="skill-level">Intermediate</p>
+                                    </div>
+
+                                    <div className="skill">
+                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Linux</h5>
                                         <p className="skill-level">Intermediate</p>
                                     </div>
                                 </div>
@@ -424,6 +533,11 @@ const Home = () => {
 
                                     <div className="skill">
                                         <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Zotero</h5>
+                                        <p className="skill-level">Intermediate</p>
+                                    </div>
+
+                                    <div className="skill">
+                                        <h5 className="skill-title"> <VerifiedRoundedIcon className="skill-icon" />Draw IO</h5>
                                         <p className="skill-level">Intermediate</p>
                                     </div>
 
